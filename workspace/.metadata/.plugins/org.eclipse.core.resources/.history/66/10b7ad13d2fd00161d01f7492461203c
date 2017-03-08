@@ -1,0 +1,39 @@
+package LUDOSimulator;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+public class MiniMax implements LUDOPlayer {
+
+	LUDOBoard board;
+
+	public MiniMax(LUDOBoard board) {
+		this.board = board;
+	}
+//Do the search after dice roll. 
+	float pathCost;
+	
+	public void play() {
+		board.print("Minimax player playing");
+		int[][] current_board = board.getBoardState();
+		int[][] new_board = board.getNewBoardState(i, board.getMyColor(), board.getDice());
+		
+	}
+	
+	
+	public double Utility(){
+		return 0;
+	}
+	public double MaxValue(){
+		
+		MinValue();
+		return 0;
+	}
+	public double MinValue(){
+		
+		MaxValue();
+		return 0;
+	}
+	public double Heuristic(){
+		return 0;
+	}
+}
